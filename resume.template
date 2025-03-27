@@ -205,7 +205,7 @@
             <ul id="education" class="clearfix">
               {{#education}}
               <li>
-                <div class="year pull-left">{{startDateYear}} {{endDateYear}}</div>
+                <div class="year pull-left">{{endDateYear}} {{startDateYear}}</div>
                 <div class="description pull-right">
                   <h3>{{institution}}</h3>
                   <div class="where">{{organization}}</div>

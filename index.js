@@ -115,7 +115,7 @@ function render(resumeObject) {
                 w.endDateYear = (w.endDate || "").substr(0,4);
                 w.endDateMonth = getMonth(w.endDate || "");
             } else {
-                w.endDateYear = 'Present'
+                w.endDateYear = 'Heute'
             }
             if (w.highlights) {
                 if (w.highlights[0]) {
@@ -127,29 +127,29 @@ function render(resumeObject) {
         });
     }
 
-//    if (resumeObject.volunteer && resumeObject.volunteer.length) {
-//        resumeObject.volunteerBool = true;
-//        _.each(resumeObject.volunteer, function(w){
-//            if (w.startDate) {
-//                w.startDateYear = (w.startDate || "").substr(0,4);
-//                w.startDateMonth = getMonth(w.startDate || "");
-//
-//            }
-//            if(w.endDate) {
-//                w.endDateYear = (w.endDate || "").substr(0,4);
-//                w.endDateMonth = getMonth(w.endDate || "");
-//            } else {
-//                w.endDateYear = 'Present'
-//            }
-//            if (w.highlights) {
-//                if (w.highlights[0]) {
-//                    if (w.highlights[0] != "") {
-//                        w.boolHighlights = true;
-//                    }
-//                }
-//            }
-//        });
-//    }
+   if (resumeObject.volunteer && resumeObject.volunteer.length) {
+       resumeObject.volunteerBool = true;
+       _.each(resumeObject.volunteer, function(w){
+           if (w.startDate) {
+               w.startDateYear = (w.startDate || "").substr(0,4);
+               w.startDateMonth = getMonth(w.startDate || "");
+
+           }
+           if(w.endDate) {
+               w.endDateYear = (w.endDate || "").substr(0,4);
+               w.endDateMonth = getMonth(w.endDate || "");
+           } else {
+               w.endDateYear = 'Heute'
+           }
+           if (w.highlights) {
+               if (w.highlights[0]) {
+                   if (w.highlights[0] != "") {
+                       w.boolHighlights = true;
+                   }
+               }
+           }
+       });
+   }
 
     if (resumeObject.projects && resumeObject.projects.length) {
         if (resumeObject.projects[0].name) {

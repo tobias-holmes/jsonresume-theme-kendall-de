@@ -1,3 +1,8 @@
+>[!NOTE]
+>This is a modified version of Dominik Alexanders german traslation of M. Adam Kendalls jsonresume theme. The main changes are the reinstatement of the volunteering section as well as the switching of the start and end date position of the education entries.
+>
+>Original README starts below:
+
 # jsonresume-theme-kendall-german
 
 This is a German translated fork of M. Adam Kendall's original [jsonresume-theme-kendall](https://github.com/LinuxBozo/jsonresume-theme-kendall/blob/master/README.md). Please contact M. Adam Kendall directly for any issues which are not related to the German translation.
